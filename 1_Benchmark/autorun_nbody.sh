@@ -2,7 +2,7 @@
 
 # Number of times to restart WSL
 num_restarts=1
-save_path="/Users/raro69/Desktop/Impianti Alberto e Giuseppe/1_Benchmark/M1Pro_A/results1000000.txt"
+save_path="/Users/raro69/Desktop/Impianti Alberto e Giuseppe/1_Benchmark/M1Pro_A/risultati1000000.txt"
 
 cd nbody/
 
