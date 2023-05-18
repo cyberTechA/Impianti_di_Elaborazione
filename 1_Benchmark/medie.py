@@ -9,16 +9,29 @@ def average_from_file(file_path, output_file):
             if line.strip() != "":
                 numbers.append(int(line))  # Aggiunge il numero alla lista
 
-            # Se la lista contiene 30 numeri, calcola la media e la aggiunge alla lista delle medie
+            # Se la lista contiene 5 numeri, calcola la media e la aggiunge alla lista delle medie
             if len(numbers) == 5:
                 averages.append(sum(numbers) / len(numbers))
                 numbers = []  # Resetta la lista per il prossimo gruppo di numeri
 
-    # Apre il file di output in modalità scrittura
-    with open(output_file, "w") as output:
-        # Scrive ogni media su una nuova riga nel file di output
-        for average in averages:
-            output.write(str(average) + "\n")
+    # Apre il file di output in modalità lettura/scrittura
+    with open(output_file, "r+") as output:
+        # Legge i valori esistenti nel file di output
+        existing_values = output.readlines()
+        existing_values = [float(value.strip()) for value in existing_values]
+
+        # Aggiunge le nuove medie alla lista dei valori esistenti
+        existing_values.extend(averages)
+
+        # Si posiziona all'inizio del file per sovrascrivere i valori
+        output.seek(0)
+
+        # Scrive i valori aggiornati nel file di output
+        for value in existing_values:
+            output.write(str(value) + "\n")
+
+        # Tronca il file alla lunghezza corretta nel caso in cui le nuove medie siano meno delle precedenti
+        output.truncate()
 
 
 # Chiama la funzione con i percorsi dei file di input e output
