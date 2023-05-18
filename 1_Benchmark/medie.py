@@ -15,7 +15,7 @@ def average_from_file(file_path, output_file):
                 numbers = []  # Resetta la lista per il prossimo gruppo di numeri
 
     # Apre il file di output in modalità lettura/scrittura
-    with open(output_file, "r+") as output:
+    with open(output_file, "a+") as output:
         # Legge i valori esistenti nel file di output
         existing_values = output.readlines()
         existing_values = [float(value.strip()) for value in existing_values]
@@ -35,5 +35,5 @@ def average_from_file(file_path, output_file):
 
 
 # Chiama la funzione con i percorsi dei file di input e output
-average_from_file("/Users/raro69/Desktop/Impianti Alberto e Giuseppe/1_Benchmark/M1Pro_A/risultati1000000.txt",
-                  "/Users/raro69/Desktop/Impianti Alberto e Giuseppe/1_Benchmark/M1Pro_A/medie1000000.txt")
+average_from_file("/Users/raro69/Desktop/Impianti Alberto e Giuseppe/1_Benchmark/M1Pro_A/risultati10000.txt",
+                  "/Users/raro69/Desktop/Impianti Alberto e Giuseppe/1_Benchmark/M1Pro_A/medie10000.txt")
