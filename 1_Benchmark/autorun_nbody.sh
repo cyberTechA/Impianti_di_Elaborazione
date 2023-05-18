@@ -8,5 +8,5 @@ cd nbody/
 
 for i in $(seq 1 $num_restarts); do
   # Run program
-  bash ./launch_nbody.sh -r 30 -n 1000000 >> "$save_path"
+  bash ./launch_nbody.sh -r 5 -n 1000000 >> "$save_path"
 done
