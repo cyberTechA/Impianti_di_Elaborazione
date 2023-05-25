@@ -10,7 +10,7 @@ def average_from_file(file_path, output_file):
                 numbers.append(int(line))  # Aggiunge il numero alla lista
 
             # Se la lista contiene 5 numeri, calcola la media e la aggiunge alla lista delle medie
-            if len(numbers) == 30:
+            if len(numbers) == 5:
                 averages.append(sum(numbers) / len(numbers))
                 numbers = []  # Resetta la lista per il prossimo gruppo di numeri
 
@@ -35,5 +35,5 @@ def average_from_file(file_path, output_file):
 
 
 # Chiama la funzione con i percorsi dei file di input e output
-average_from_file("/Users/raro69/Desktop/Impianti Alberto e Giuseppe/1_Benchmark/M1Pro_A/risultati_r_1_1000000.txt",
-                  "/Users/raro69/Desktop/Impianti Alberto e Giuseppe/1_Benchmark/M1Pro_A/medie_r_1_1000000.txt")
+average_from_file("/Users/raro69/Desktop/Impianti Alberto e Giuseppe/1_Benchmark/M1Pro_A/risultati_r_5_1000000_in_corrente.txt",
+                  "/Users/raro69/Desktop/Impianti Alberto e Giuseppe/1_Benchmark/M1Pro_A/medie_r_5_1000000_in_corrente.txt")
