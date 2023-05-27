@@ -15,7 +15,7 @@ def customized_barplot(start_value, max_value_graf, end_value, position):
     plt.bar(x, y, color='blue', bottom=start_value)
     
     # Imposta l'asse Y da zero al massimo valore
-    plt.ylim(155000, max_value_graf)
+    plt.ylim(130000, max_value_graf)
     
     # Imposta l'asse X per avere solo valori positivi
     plt.xlim(0, position + 1)
@@ -30,13 +30,13 @@ max_value_graf = 175000
 
 
 # Valori per la prima macchina
-start_value_1 = 160112.5
-end_value_1 = 160475.9
+start_value_1 = 158205.4
+end_value_1 = 158818.5
 position_1 = 1
 
 # Valori per la seconda macchina
-start_value_2 = 163443
-end_value_2 = 164231.7
+start_value_2 = 163758.2
+end_value_2 = 164189.2
 position_2 = 2
 
 # Crea il primo bar plot
