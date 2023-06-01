@@ -1,0 +1,6 @@
+h=vartest2(x,y);
+save('2sampleF-test_forequal_variances_1000000.txt', 'h', '-ascii');
+result=ttest2(x,y,'Vartype','unequal');
+save('2sample_T_test_1000000.txt', 'result', '-ascii');
+result=ttest2(x,y);
+save('2sample_T_test_1000000.txt', 'result', '-ascii');
