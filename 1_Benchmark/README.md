@@ -1,6 +1,5 @@
 # NB: LE MISURAZIONI DEVONO ESSERE EFFETTUATE CON I COMPUTER IN CORRENTE
 
-
 # Guida all'esecuzione dello script shell autorun_nbody.sh
 
 ## Installazione
@@ -9,10 +8,12 @@
 git clone https://github.com/cyberTechA/Impianti_di_Elaborazione.git
 ```
 
-##Prima di eseguire il seguente script controllare l'architettura del proprio processore, in questo caso per il nbody è stato fato il make file su arm, nel caso il computer sia x86 eliminare i file .o dalla cartella ed eseguire il seguente comando
+## Prima di eseguire il seguente script controllare l'architettura del proprio processore, in questo caso per il nbody è stato fato il make file su arm, nel caso il computer sia x86 eliminare i file .o dalla cartella ed eseguire il seguente comando
+
     ```bash
     make all
     ```
+
 ## Esecuzione
 
 1. Apri il terminale o il prompt dei comandi sul tuo sistema.
