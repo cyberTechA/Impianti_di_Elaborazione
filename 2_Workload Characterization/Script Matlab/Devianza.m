@@ -46,3 +46,14 @@ B = sum(B); % Devianza totale inter-cluster
 DEV_PCA_CL_per = (B/DEV_TOT); % Percentuale di devianza dopo PCA e clustering
 DEV_LOST_per = (1-DEV_PCA/DEV_TOT)+(W/DEV_TOT); % Percentuale di devianza persa dopo PCA e clustering
 %DEV_LOST_per2 = (1-DEV_PCA/DEV_TOT)+ DEV_PCA_per * W/DEV_PCA; % Formula equivalente
+
+%% Salva dati su txt rinominare il file per il PC desiderato e cluster scelti
+fileID = fopen('script_results.txt', 'w');
+fprintf(fileID, 'DEV_TOT: %f\n', DEV_TOT);
+fprintf(fileID, 'DEV_PCA: %f\n', DEV_PCA);
+fprintf(fileID, 'DEV_PCA_per: %f\n', DEV_PCA_per);
+fprintf(fileID, 'W: %f\n', W);
+fprintf(fileID, 'B: %f\n', B);
+fprintf(fileID, 'DEV_PCA_CL_per: %f\n', DEV_PCA_CL_per);
+fprintf(fileID, 'DEV_LOST_per: %f\n', DEV_LOST_per);
+fclose(fileID);
