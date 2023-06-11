@@ -24,9 +24,9 @@ DEV_PCA_CL_per_y_20 = [80.2143, 84.9405, 87.9750]  # Valori y per il punto 20
 
 # Plot dei punti speciali con colori diversi per il Cluster da 10
 colors_10 = ['C1', 'C2', 'C3']
-plt.stem(Cluster_number_x_10[0], DEV_PCA_CL_per_y_10[0], linefmt=colors_10[0]+ '-', markerfmt=colors_10[0]+ 'o', basefmt=' ' )
-plt.stem(Cluster_number_x_10[1], DEV_PCA_CL_per_y_10[1], linefmt=colors_10[1]+ '-', markerfmt=colors_10[1]+ 'o', basefmt=' ', bottom=DEV_PCA_CL_per_y_10[0])
-plt.stem(Cluster_number_x_10[2], DEV_PCA_CL_per_y_15[2], linefmt=colors_10[2]+ '-', markerfmt=colors_10[2]+ 'o', basefmt=' ',bottom=DEV_PCA_CL_per_y_10[1])
+plt.stem(Cluster_number_x_10[0], DEV_PCA_CL_per_y_10[0], linefmt=colors_10[0]+ '-', markerfmt=colors_10[0]+ 'o', basefmt=' ',label='Dev PCA + Clustering 3 P.C' )
+plt.stem(Cluster_number_x_10[1], DEV_PCA_CL_per_y_10[1], linefmt=colors_10[1]+ '-', markerfmt=colors_10[1]+ 'o', basefmt=' ', bottom=DEV_PCA_CL_per_y_10[0],label='Dev PCA + Clustering 4 P.C')
+plt.stem(Cluster_number_x_10[2], DEV_PCA_CL_per_y_15[2], linefmt=colors_10[2]+ '-', markerfmt=colors_10[2]+ 'o', basefmt='',bottom=DEV_PCA_CL_per_y_10[1])
 
 
 
@@ -41,9 +41,9 @@ plt.stem(Cluster_number_x_15[2], DEV_PCA_CL_per_y_15[2], linefmt=colors_15[2]+ '
 
 # Plot dei punti speciali con colori diversi per il Cluster da 20
 colors_20 = ['C1', 'C2', 'C3']
-plt.stem(Cluster_number_x_20[0], DEV_PCA_CL_per_y_20[0], linefmt=colors_20[0]+ '-', markerfmt=colors_20[0]+ 'o', basefmt=' ' )
+plt.stem(Cluster_number_x_20[0], DEV_PCA_CL_per_y_20[0], linefmt=colors_20[0]+ '-', markerfmt=colors_20[0]+ 'o', basefmt=' ')
 plt.stem(Cluster_number_x_20[1], DEV_PCA_CL_per_y_20[1], linefmt=colors_20[1]+ '-', markerfmt=colors_20[1]+ 'o', basefmt=' ', bottom=DEV_PCA_CL_per_y_20[0])
-plt.stem(Cluster_number_x_20[2], DEV_PCA_CL_per_y_20[2], linefmt=colors_20[2]+ '-', markerfmt=colors_20[2]+ 'o', basefmt=' ',bottom=DEV_PCA_CL_per_y_20[1])
+plt.stem(Cluster_number_x_20[2], DEV_PCA_CL_per_y_20[2], linefmt=colors_20[2]+ '-', markerfmt=colors_20[2]+ 'o', basefmt=' ',bottom=DEV_PCA_CL_per_y_20[1],label='Dev PCA + Clustering 5 P.C')
 
 # Linee tratteggiate parallele all'asse y
 x_line = np.arange(0, 26)  # Valori x per le linee
