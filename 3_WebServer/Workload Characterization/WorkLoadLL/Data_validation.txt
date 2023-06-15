@@ -1,0 +1,16 @@
+norm_wl_real: 1.000000
+p_value_norm_real: 0.000575
+norm_wl_synth: 1.000000
+p_value_norm_synth: 0.000018
+p_wilc: 0.220397
+p_wilc: 0.013917
+p_wilc: 0.885756
+p_wilc: 0.654202
+p_wilc: 0.179015
+p_wilc: 0.290766
+h_wilc: 0.000000
+h_wilc: 0.000000
+h_wilc: 0.000000
+h_wilc: 0.000000
+h_wilc: 0.000000
+h_wilc: 0.000000
